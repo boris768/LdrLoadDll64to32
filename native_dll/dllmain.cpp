@@ -1,6 +1,9 @@
 ﻿#include <windows.h>
 #include <winternl.h>
 
+//big thanks to VollRagm
+//https://vollragm.github.io/posts/kernel-message-box/
+
 extern "C" NTSTATUS NTAPI NtRaiseHardError(
     NTSTATUS ErrorStatus, ULONG NumberOfParameters, 
     ULONG UnicodeStringParameterMask, PULONG_PTR Parameters,
